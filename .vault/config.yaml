@@ -153,14 +153,6 @@ directories:
   required_frontmatter: []
   required_sections: []
   templates: []
-- name: dummy3
-  description: 'Linked project: dummy3'
-  path: /home/oh20210736-ud/Documents/WorkSpace/dummy3
-  vault_path: /home/oh20210736-ud/Documents/WorkSpace/CentralBrain/projects/dummy3
-  archive_after_days: 120
-  required_frontmatter: []
-  required_sections: []
-  templates: []
 git_remote: ''
 providers:
 - codex

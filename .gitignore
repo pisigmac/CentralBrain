@@ -11,3 +11,4 @@ Thumbs.db
 .vault/index/
 .vault/archive/*.tmp
 .session
+.vault
