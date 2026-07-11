@@ -137,6 +137,14 @@ directories:
   required_sections: []
   templates:
   - vault/templates/reviews.md
+- name: AgentDrive
+  description: 'Linked project: AgentDrive'
+  path: /home/oh20210736-ud/Documents/WorkSpace/new/new/AgentDrive
+  vault_path: /home/oh20210736-ud/Documents/WorkSpace/CentralBrain/projects/AgentDrive
+  archive_after_days: 120
+  required_frontmatter: []
+  required_sections: []
+  templates: []
 git_remote: ''
 providers:
 - codex
