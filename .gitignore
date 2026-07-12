@@ -7,8 +7,5 @@ __pycache__/
 Thumbs.db
 
 # AgentDrive
-.vault/staging/
-.vault/index/
-.vault/archive/*.tmp
 .session
-.vault
+/.vault/
