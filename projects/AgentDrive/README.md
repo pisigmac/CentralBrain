@@ -1,7 +1,7 @@
 ---
-created: 2026-07-12T15:14:27.284128+00:00
-id: ec5b23e708fd
-modified: 2026-07-12T15:14:27.284128+00:00
+created: 2026-07-12T15:19:11.222102+00:00
+id: 1fb43f0f6a7f
+modified: 2026-07-12T15:19:11.222102+00:00
 source: daemon
 status: active
 tags:
@@ -120,6 +120,91 @@ vault/
 │   ├── skills/               # Executable agent skills
 │   ├── registry/             # Capability registry
 │   ├── staging/              # Pending writes (dev branch)
-│   ├── arc
+│   ├── archive/              # Hidden — 120-day+ files
+│   ├── index/                # Search indices
+│   └── schemas/              # Validation schemas
+└── .github/workflows/
+    └── auto-archive.yml      # Weekly maintenance
+```
 
-_(truncated — see full README in project root)_
+<br>
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));" />
+<br>
+
+### 🏗️ Architecture Flow
+
+<div align="center">
+  <code>User Prompt</code> → <code>Agent writes via MCP</code> → <code>Staged to 'dev' branch</code> → <code>Nightly PR raised</code> → <code>Human merges to 'main'</code>
+</div>
+
+<br>
+
+```mermaid
+graph TD
+    A[MCP CLIENTS<br>Claude, Cursor, Codex] -->|Tools| B(MCP Server vault.mcp)
+    B --> C{Core Engines}
+    C -->|.index| D[Search Engine]
+    C -->|.archive 120d| E[Archive Engine]
+    C -->|dev/main PR| F[Git Workflow]
+    C -->|Hooks & Harvest| G[Daemon]
+    D --> H[(VAULT FS)]
+    E --> H
+    F --> H
+    G --> H
+```
+
+<br>
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));" />
+<br>
+
+### 🛠️ CLI Commands
+
+```bash
+# Initialize
+vault init                       # Create new vault in current directory
+vault init ~/my-vault            # Custom path
+
+# Status & Health
+vault status                     # Git + health overview
+vault health --report            # Full diagnostic report
+
+# Search
+vault search "kubernetes"        # Keyword search
+vault search "design" --semantic # Semantic rerank
+
+# Archive
+vault archive                    # Archive stale files
+vault archive --dry-run          # Preview only
+
+# Registry
+vault registry --list            # All skills
+
+# MCP
+vault mcp --install              # Auto-configure Claude/Cursor
+vault mcp --run                  # Start stdio server
+```
+
+<br>
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));" />
+<br>
+
+### 📜 AGENTS.md Governance
+
+Every vault has a root `AGENTS.md` that **ALL** AI providers must read before acting. It strictly defines:
+
+1. **Branch Rule** — All writes go to `dev`, never `main`
+2. **Approval Gate** — Stage to `.vault/staging/`, raise PR
+3. **Schema Rule** — Every file needs frontmatter
+4. **Archive Rule** — Old files move to `.vault/archive/`
+5. **Source Tag** — Mark who wrote each file
+6. **No Secrets** — Never store tokens in vault files
+7. **Cross-Reference** — Use `[[WikiLinks]]` between entries
+
+<br>
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));" />
+<br>
+
+<div align="center">
+  <p>Built for the autonomous future. Licensed under <b>MIT</b>.</p>
+</div>
+
