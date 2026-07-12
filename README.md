@@ -19,6 +19,14 @@
 	<strong>The Central Brain for all your automated work.</strong>
 </p>
 
+```text
+  ____           _             _ ____            _       
+ / ___|___ _ __ | |_ _ __ __ _| | __ ) _ __ __ _(_)_ __  
+| |   / _ \ '_ \| __| '__/ _` | |  _ \| '__/ _` | | '_ \ 
+| |__|  __/ | | | |_| | | (_| | | |_) | | | (_| | | | | |
+ \____\___|_| |_|\__|_|  \__,_|_|____/|_|  \__,_|_|_| |_|
+```
+
 ### Overview
 
 └ Automatically managed environment<br>
