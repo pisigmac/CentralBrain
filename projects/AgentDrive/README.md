@@ -1,7 +1,7 @@
 ---
-created: 2026-07-11T18:17:00.691229+00:00
-id: a3f7d2868a8a
-modified: 2026-07-11T18:17:00.691229+00:00
+created: 2026-07-12T14:57:19.224807+00:00
+id: 54c251aa6ab4
+modified: 2026-07-12T14:57:19.224807+00:00
 source: daemon
 status: active
 tags:
@@ -9,27 +9,61 @@ tags:
 type: overview
 ---
 
-# 🧠 AgentDrive
+# 1. Install the CLI globally
 
 **Project:** `AgentDrive`
 
 **Path:** `AgentDrive`
 
-**Description:** **Give your AI Agents a Git-Native, Infinite Memory Drive.**
+**Description:** [![CI](https://github.com/pisigmac/AgentDrive/actions/workflows/agentdrive-auto-pr.yml/badge.svg)](https://github.com/pisigmac/AgentDrive/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/p
 
 ## README
 
-# 🧠 AgentDrive
+<div align="center">
 
-**Give your AI Agents a Git-Native, Infinite Memory Drive.**
+[![CI](https://github.com/pisigmac/AgentDrive/actions/workflows/agentdrive-auto-pr.yml/badge.svg)](https://github.com/pisigmac/AgentDrive/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-Say goodbye to black-box vector databases and locked-in memory platforms. **AgentDrive** turns your local filesystem into a highly structured, self-updating, markdown-based memory system. Whether you use Claude, Cursor, OpenAI, or a custom script, your agents can seamlessly read, write, and reason over an ever-evolving context that lives right alongside your code.
+<h1>
+  <picture>
+    <img width="80" height="80" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" alt="Brain Logo">
+  </picture>
+  <br/>
+  AgentDrive
+</h1>
+
+<h3>Give your AI Agents a Git-Native, Infinite Memory Drive.</h3>
+
+<p>
+Say goodbye to black-box vector databases and locked-in memory platforms.<br/>
+<b>AgentDrive</b> turns your local filesystem into a highly structured, self-updating,<br/>
+markdown-based memory system for Claude, Cursor, and OpenAI.
+</p>
+
+</div>
 
 ---
 
-## Quick Start
+### 🧠 The Next Evolution of Agent Context
 
-### One-Command Install
+└ **Git-Native Memory** — All agent writes go to `dev`, keeping `main` perfectly stable.<br>
+└ **Central Brain Architecture** — Link endless repositories to a single, global memory vault.<br>
+└ **Auto-Harvesting Daemon** — Background processes automatically summarize code changes into context.<br>
+└ **Offline-First MCP Server** — Works locally without relying on cloud embeddings.<br>
+└ **Built-in Auto-Archive** — Self-maintaining vault that archives stale contexts after 120 days.<br>
+└ **Strict Governance** — Enforces root `AGENTS.md` rules for every autonomous action.<br>
+
+<br>
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));" />
+<br>
+
+### 🚀 Quick Start
+
+One command to initialize AgentDrive globally:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/pisigmac/agentdrive/main/setup.sh | bash
@@ -48,19 +82,11 @@ cd ~/my-project
 vault init
 ```
 
-### Adopting Existing Projects
+<br>
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));" />
+<br>
 
-You can run `vault init` safely inside projects that already have code and a `.git` repository! Here is what happens:
-- It detects your existing `.git` repo and gracefully creates a new `dev` branch for AI agents to write to.
-- It safely scaffolds the `.vault/` configuration and templates.
-- **Tip:** `vault init` commits these setup files automatically. Ensure your working tree is clean before running it to avoid bundling uncommitted changes into the initialization commit.
-- **Auto-Summarization:** The vault won't scan your codebase immediately on init. Instead, a background daemon will automatically wake up and summarize your tech stack, folder structure, open TODOs, and health status **the very next time you make a commit**. 
-- To force an immediate summarization without waiting for a commit, simply run:
-  ```bash
-  vault daemon
-  ```
-
-### The Central Brain Architecture (Multi-Repo)
+### 🌐 The Central Brain Architecture (Multi-Repo)
 
 If you have multiple projects and don't want to clutter them with `.vault/` folders, you can use the Central Brain architecture.
 
@@ -69,55 +95,31 @@ If you have multiple projects and don't want to clutter them with `.vault/` fold
 
 This drops a tiny `AGENTS.md` redirect file in your codebase that instructs AI agents to read context from the Central Brain. Every time you commit, the local daemon wakes up and routes all the generated context directly into your Brain repository!
 
-[Read the full Architecture Reference here.](docs/central_brain_architecture.md)
+<br>
+<hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));" />
+<br>
 
-### What You Get
+### 📁 What You Get
 
-```
+A beautifully structured, self-governing memory filesystem out-of-the-box.
+
+```text
 vault/
 ├── AGENTS.md                 # Root governance (all providers read this)
-├── projects/                   # Active work
-├── people/                     # Contacts (never archived)
-├── meetings/                   # Meeting notes
-├── decisions/                  # Architecture decisions
-├── goals/                      # OKRs and objectives
-├── resources/                  # Bookmarks, articles
-├── experiments/                # Ephemeral prototypes
-├── threads/                    # Conversation histories
-├── reviews/                    # Retrospectives
-├── templates/                  # Markdown templates
+├── projects/                 # Active work
+├── people/                   # Contacts (never archived)
+├── meetings/                 # Meeting notes
+├── decisions/                # Architecture decisions
+├── goals/                    # OKRs and objectives
+├── resources/                # Bookmarks, articles
+├── experiments/              # Ephemeral prototypes
+├── threads/                  # Conversation histories
+├── reviews/                  # Retrospectives
+├── templates/                # Markdown templates
 ├── .vault/
-│   ├── skills/                 # Executable agent skills
-│   ├── registry/               # Capability registry
-│   ├── staging/                # Pending writes (dev branch)
-│   ├── archive/                # Hidden — 120-day+ files
-│   ├── index/                  # Search indices
-│   └── schemas/                # Validation schemas
-└── .github/workflows/
-    └── auto-archive.yml        # Weekly maintenance
-```
-
----
-
-## Core Concepts
-
-### 1. Git Branching for Agent Safety
-
-All agent writes go to `dev`. Human approval merges to `main`.
-
-```
-User prompt → Agent writes → Staged to dev → PR raised → Human merges → main
-```
-
-```bash
-vault stage path/to/file.md "# New content" --agent claude
-vault promote                    # Merge dev → main
-```
-
-### 2. Contextual Directories
-
-Your life is organized into 10+ contextual buckets. Each has its own archive rules, templates, and frontmatter requirements.
-
-| Directory | Purpose | Arch
+│   ├── skills/               # Executable agent skills
+│   ├── registry/             # Capability registry
+│   ├── staging/              # Pending writes (dev branch)
+│   ├── arc
 
 _(truncated — see full README in project root)_

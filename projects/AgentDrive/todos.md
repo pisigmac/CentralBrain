@@ -1,7 +1,7 @@
 ---
-created: 2026-07-11T18:17:00.703251+00:00
-id: c922b65dd842
-modified: 2026-07-11T18:17:00.703251+00:00
+created: 2026-07-12T14:57:19.240154+00:00
+id: 05e4968228db
+modified: 2026-07-12T14:57:19.240154+00:00
 source: daemon
 status: active
 tags:
@@ -11,7 +11,6 @@ type: todos
 
 # Open Items: AgentDrive
 
-- **[TODO]** s, and health status **the very next time you make a commit**. — `README.md`
 - **[TODO]** _count\']} |\n"', 'md += f"| **{p[\'name\']}** | {p[\'status\']} | {tech_str} | {health_icon} {p[\'health\']} | {p[\'recent_commits\']} | {p[\'todo_count\']} |\\n"') — `fix_syntax.py`
 - **[TODO]** _count\']} TODOs/FIXMEs\n"', 'md += f"- **Open items:** {p[\'todo_count\']} TODOs/FIXMEs\\n"') — `fix_syntax.py`
 - **[TODO]** [\'kind\']}]** {todo[\'desc\']} — *{todo[\'project\']}*\n"', 'md += f"- **[{todo[\'kind\']}]** {todo[\'desc\']} — *{todo[\'project\']}*\\n"') — `fix_syntax.py`
@@ -61,5 +60,6 @@ type: todos
 - **[TODO]** s = re.findall(r"- \*\*\[(TODO|FIXME|HACK|BUG)\]\*\*\s*(.+?)$", text, re.MULTILINE) — `plumber/vault-harvester.py`
 - **[TODO]** s[:10]: — `plumber/vault-harvester.py`
 - **[TODO]** s.append({ — `plumber/vault-harvester.py`
+- **[TODO]** _count']} |\n" — `plumber/vault-harvester.py`
 
-_... and 12 more_
+_... and 11 more_
