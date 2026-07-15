@@ -1,7 +1,7 @@
 ---
-created: 2026-07-13T03:56:48.628617+00:00
-id: c6dad07c66e5
-modified: 2026-07-13T03:56:48.628617+00:00
+created: 2026-07-15T16:37:54.723125+00:00
+id: bcc873b14f4b
+modified: 2026-07-15T16:37:54.723125+00:00
 source: daemon
 status: active
 tags:
@@ -11,4 +11,6 @@ type: health
 
 # Health Check: AgentDrive
 
-✅ All checks passed.
+**Issues:**
+
+- ⚠️ 2 uncommitted file(s)
