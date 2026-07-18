@@ -1,7 +1,7 @@
 ---
-created: 2026-07-18T20:00:16.473396+00:00
-id: 3121f5cbd2b0
-modified: 2026-07-18T20:00:16.473396+00:00
+created: 2026-07-18T20:39:38.166002+00:00
+id: 6e99861eda1c
+modified: 2026-07-18T20:39:38.166002+00:00
 source: daemon
 status: active
 tags:
@@ -35,31 +35,31 @@ type: todos
 - **[TODO]** s |\n" — `vault/core/daemon.py`
 - **[TODO]** _count']} |\n" — `vault/core/daemon.py`
 - **[TODO]** s.md\n" — `vault/core/daemon.py`
-- **[TODO]** s.md            ← harvested from TODOs — `plumber/vault-harvester.py`
-- **[TODO]** s/FIXMEs → projects/todos.md — `plumber/vault-harvester.py`
-- **[TODO]** s(project_path, result) — `plumber/vault-harvester.py`
-- **[TODO]** s: {e}") — `plumber/vault-harvester.py`
-- **[TODO]** s(self, project_path: Path, result: HarvestResult) -> None: — `plumber/vault-harvester.py`
-- **[TODO]** s = [] — `plumber/vault-harvester.py`
-- **[TODO]** |FIXME|HACK|BUG|XXX)[\s:]*(.*?)$", text, re.MULTILINE | re.IGNORECASE): — `plumber/vault-harvester.py`
-- **[TODO]** s.append((kind, desc, rel)) — `plumber/vault-harvester.py`
-- **[TODO]** s: — `plumber/vault-harvester.py`
-- **[TODO]** s", — `plumber/vault-harvester.py`
-- **[TODO]** s"], — `plumber/vault-harvester.py`
-- **[TODO]** _count=len(todos), — `plumber/vault-harvester.py`
-- **[TODO]** s[:50]:  # cap at 50 — `plumber/vault-harvester.py`
-- **[TODO]** s) > 50: — `plumber/vault-harvester.py`
-- **[TODO]** s) - 50} more_\n" — `plumber/vault-harvester.py`
-- **[TODO]** s.md", entry, result) — `plumber/vault-harvester.py`
-- **[TODO]** s = [] — `plumber/vault-harvester.py`
-- **[TODO]** s — `plumber/vault-harvester.py`
-- **[TODO]** s_file = vault / "projects" / "todos.md" — `plumber/vault-harvester.py`
-- **[TODO]** _count"] = 0 — `plumber/vault-harvester.py`
-- **[TODO]** s_file.exists(): — `plumber/vault-harvester.py`
-- **[TODO]** s_file.read_text() — `plumber/vault-harvester.py`
-- **[TODO]** s = re.findall(r"- \*\*\[(TODO|FIXME|HACK|BUG)\]\*\*\s*(.+?)$", text, re.MULTILINE) — `plumber/vault-harvester.py`
-- **[TODO]** s[:10]: — `plumber/vault-harvester.py`
-- **[TODO]** s.append({ — `plumber/vault-harvester.py`
-- **[TODO]** _count']} |\n" — `plumber/vault-harvester.py`
+- **[TODO]** s | — `ui/public/data/master-overview.md`
+- **[TODO]** s.md — `ui/public/data/master-overview.md`
+- **[TODO]** s.md — `ui/public/data/global-memory.md`
+- **[TODO]** s — `ui/public/data/global-memory.md`
+- **[TODO]** s — `ui/public/data/global-memory.md`
+- **[HACK]** ]** er News post — `docs/MARKETING.md` — `ui/public/data/global-memory.md`
+- **[HACK]** ]** er News, IndieHackers — `docs/MARKETING.md` — `ui/public/data/global-memory.md`
+- **[BUG]** ]** ging..."); — `api/lib/scraper/upwork.ts` — `ui/public/data/global-memory.md`
+- **[BUG]** ]** .png" }); — `api/lib/scraper/upwork.ts` — `ui/public/data/global-memory.md`
+- **[BUG]** ]** .png"); — `api/lib/scraper/upwork.ts` — `ui/public/data/global-memory.md`
+- **[TODO]** s.md — `ui/public/data/global-memory.md`
+- **[TODO]** s — `ui/public/data/global-memory.md`
+- **[TODO]** s — `ui/public/data/global-memory.md`
+- **[TODO]** ]** s. npm test -- tests/auth | grep passing runs daily forever. The first time it catches a silent regression, you'll never go back. — `docs/07-social.md` — `ui/public/data/global-memory.md`
+- **[BUG]** ]** fix doesn't need surrounding cleanup. Don't design for hypothetical future requirements: do the simplest thing that works well. Don't add error handling or validation for scenarios that cannot hap — `ui/public/data/global-memory.md`
+- **[BUG]** ]** ) — `ops/staging.md` — `ui/public/data/global-memory.md`
+- **[TODO]** s.md — `ui/public/data/global-memory.md`
+- **[TODO]** s — `ui/public/data/global-memory.md`
+- **[TODO]** s — `ui/public/data/global-memory.md`
+- **[HACK]** ]** er News post — `docs/MARKETING.md` — `ui/public/data/global-memory.md`
+- **[HACK]** ]** er News, IndieHackers — `docs/MARKETING.md` — `ui/public/data/global-memory.md`
+- **[BUG]** ]** ging..."); — `api/lib/scraper/upwork.ts` — `ui/public/data/global-memory.md`
+- **[BUG]** ]** .png" }); — `api/lib/scraper/upwork.ts` — `ui/public/data/global-memory.md`
+- **[BUG]** ]** .png"); — `api/lib/scraper/upwork.ts` — `ui/public/data/global-memory.md`
+- **[TODO]** s.md — `ui/public/data/global-memory.md`
+- **[TODO]** s — `ui/public/data/global-memory.md`
 
-_... and 11 more_
+_... and 138 more_

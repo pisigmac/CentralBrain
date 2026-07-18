@@ -1,7 +1,7 @@
 ---
-created: 2026-07-18T20:00:16.459143+00:00
-id: e9db0fc7621b
-modified: 2026-07-18T20:00:16.459143+00:00
+created: 2026-07-18T20:39:38.145895+00:00
+id: 8288a0da701f
+modified: 2026-07-18T20:39:38.145895+00:00
 source: daemon
 status: active
 tags:
@@ -183,6 +183,11 @@ vault registry --list            # All skills
 # MCP
 vault mcp --install              # Auto-configure Claude/Cursor
 vault mcp --run                  # Start stdio server
+
+# Dashboard & Sync
+vault dashboard --deploy         # Deploy Web UI to Central Brain
+vault pull                       # Pull global memory locally
+vault stats                      # View contribution analytics
 ```
 
 <br>
