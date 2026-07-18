@@ -1,7 +1,7 @@
 ---
-created: 2026-07-18T20:00:30.985949+00:00
-id: 36bf269e7c72
-modified: 2026-07-18T20:00:30.985949+00:00
+created: 2026-07-18T18:56:34.584719+00:00
+id: 9d23f5841ecd
+modified: 2026-07-18T18:56:34.584719+00:00
 source: daemon
 status: active
 tags:
@@ -9,7 +9,7 @@ tags:
 type: health
 ---
 
-# Health Check: atlas
+# Health Check: skill-arbitrage-radar
 
 **Issues:**
 

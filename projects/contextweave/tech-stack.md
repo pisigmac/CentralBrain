@@ -1,7 +1,7 @@
 ---
-created: 2026-07-18T20:00:54.526172+00:00
-id: cfcab197838d
-modified: 2026-07-18T20:00:54.526172+00:00
+created: 2026-07-18T19:51:02.799013+00:00
+id: ae9f8aad877b
+modified: 2026-07-18T19:51:02.799013+00:00
 source: daemon
 status: active
 tags:
@@ -9,7 +9,7 @@ tags:
 type: tech-stack
 ---
 
-# Tech Stack: capsule
+# Tech Stack: contextweave
 
 **Runtime:** Python
 
