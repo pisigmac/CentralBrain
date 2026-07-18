@@ -1,7 +1,7 @@
 ---
-created: 2026-07-18T19:50:37.884476+00:00
-id: a20d44376108
-modified: 2026-07-18T19:50:37.884476+00:00
+created: 2026-07-18T19:50:41.211629+00:00
+id: b6c9ba45c48f
+modified: 2026-07-18T19:50:41.211629+00:00
 source: daemon
 status: active
 tags:
@@ -68,15 +68,22 @@ Make sure you have the following installed on your machine:
 * [Docker Compose](https://docs.docker.com/compose/install/)
 * `make` (Usually pre-installed on Linux/macOS)
 
-### 1. Launch the Platform
-We have provided a streamlined bash script that automatically provisions the environment variables, spins up the Docker containers, waits for migrations, and seeds the database with initial test data.
+### 1. One-Line Installation (Recommended)
+The fastest way to install AgentOS, set up the CLI, and spin up the Docker containers is by running our automated installer in your terminal:
 
-Simply run:
 ```bash
-./start_all.sh
+curl -sSf https://raw.githubusercontent.com/pisigmac/AgentOS/main/install.sh | bash
 ```
 
-### 2. Access the Dashboard
+Once completed, simply run `source ~/.bashrc` to activate the `agent` CLI command globally.
+
+### 2. Manual Installation
+If you prefer to install manually:
+```bash
+git clone https://github.com/pisigmac/AgentOS.git
+cd AgentOS
+./scripts/start_all.sh
+```
 Once the startup script finishes successfully, the services will be running on unique, non-conflicting ports.
 Open your web browser and navigate to:
 * **Frontend Dashboard:** [http://localhost:13000](http://localhost:13000)
