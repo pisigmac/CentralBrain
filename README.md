@@ -31,6 +31,7 @@
 
 └ Automatically managed environment<br>
 └ Strict Schema & Validation Rules defined in `AGENTS.md`<br>
+└ **Hosts the Global Web Dashboard for all linked projects**<br>
 └ **No manual contributions required**<br>
 └ <a href="https://github.com/pisigmac/AgentDrive">Powered by AgentDrive</a>
 
@@ -60,3 +61,47 @@ Since this vault is governed automatically by AI providers via the MCP or direct
 | `experiments/` | Prototypes | 30 days | `templates/experiment.md` |
 | `threads/` | Conversations | 120 days | `templates/thread.md` |
 | `reviews/` | Retrospectives | 365 days | `templates/review.md` |
+
+<!-- minimal line break-->
+<p>
+	<img width="1200" height="1" src="https://github.com/user-attachments/assets/7d7e7ba7-2b02-49f3-abcd-b24c566a3c16#gh-light-mode-only">
+	<img width="1200" height="1" src="https://github.com/user-attachments/assets/341bfb1d-5cb0-4ec6-89eb-4b1dcc07eeb7#gh-dark-mode-only">
+</p>
+<!-- end minimal line break-->
+
+### 🛠️ AgentDrive CLI Commands
+
+Even though this is the data repository, you can manage it using the [AgentDrive CLI](https://github.com/pisigmac/AgentDrive):
+
+```bash
+# Initialize
+vault init                       # Create new vault in current directory
+vault init ~/my-vault            # Custom path
+vault brain ~/AgentDriveBrain    # Set a path as the Central Brain
+vault link                       # Link current project to Central Brain
+
+# Status & Health
+vault status                     # Git + health overview
+vault health --report            # Full diagnostic report
+vault stats                      # View contribution analytics
+
+# Content Management
+vault new "System Design"        # Create an entry from template
+vault stage path/to/file.md      # Stage a file write to dev branch
+vault promote                    # Promote staged files from dev to main
+vault pull                       # Pull global context from Central Brain
+
+# Search & Data
+vault search "kubernetes"        # Keyword search
+vault search "design" --semantic # Semantic rerank
+vault index                      # Build local search index
+vault archive                    # Archive stale vault content
+
+# Automation & Integrations
+vault daemon                     # Trigger event-driven context harvest
+vault cron --setup               # Manage scheduled vault tasks
+vault registry --list            # Manage agent capability registry
+vault mcp --install              # Auto-configure Claude/Cursor
+vault mcp --run                  # Start stdio server
+vault dashboard --deploy         # Deploy Central Brain Web UI
+```
