@@ -1,26 +1,3 @@
----
-created: 2026-07-18T20:39:38.145895+00:00
-id: 8288a0da701f
-modified: 2026-07-18T20:39:38.145895+00:00
-source: daemon
-status: active
-tags:
-  - readme
-type: overview
----
-
-# 1. Install the CLI globally
-
-**Project:** `AgentDrive`
-
-**Path:** `AgentDrive`
-
-**Description:** [![CI](https://github.com/pisigmac/AgentDrive/actions/workflows/agentdrive-auto-pr.yml/badge.svg)](https://github.com/pisigmac/AgentDrive/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10+](https://img.shields.io/badge/p
-
-## README
-
 <div align="center">
 
 [![CI](https://github.com/pisigmac/AgentDrive/actions/workflows/agentdrive-auto-pr.yml/badge.svg)](https://github.com/pisigmac/AgentDrive/actions)
@@ -183,11 +160,6 @@ vault registry --list            # All skills
 # MCP
 vault mcp --install              # Auto-configure Claude/Cursor
 vault mcp --run                  # Start stdio server
-
-# Dashboard & Sync
-vault dashboard --deploy         # Deploy Web UI to Central Brain
-vault pull                       # Pull global memory locally
-vault stats                      # View contribution analytics
 ```
 
 <br>
@@ -213,4 +185,3 @@ Every vault has a root `AGENTS.md` that **ALL** AI providers must read before ac
 <div align="center">
   <p>Built for the autonomous future. Licensed under <b>MIT</b>.</p>
 </div>
-

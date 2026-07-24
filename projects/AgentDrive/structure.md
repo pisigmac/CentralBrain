@@ -1,7 +1,7 @@
 ---
-created: 2026-07-18T20:00:16.460972+00:00
-id: d532249a6010
-modified: 2026-07-18T20:00:16.460972+00:00
+created: 2026-07-18T20:39:38.147855+00:00
+id: d95f97051241
+modified: 2026-07-18T20:39:38.147855+00:00
 source: daemon
 status: active
 tags:
@@ -20,8 +20,18 @@ type: structure
     __init__.py
     main.py
   templates/
+    deploy-ui.yml
     templates/github/
       auto-pr.yml
+    templates/ui/
+      README.md
+      index.html
+      package-lock.json
+      package.json
+      tsconfig.app.json
+      tsconfig.json
+      tsconfig.node.json
+      vite.config.ts
   core/
     __init__.py
     archive.py

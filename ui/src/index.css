@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .nav-item {
+    @apply flex items-center space-x-3 px-3 py-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 transition-colors;
+  }
+
+  /* Minimal Markdown Styling (similar to GitHub/Notion) */
+  .markdown-body {
+    @apply text-gray-800 text-base leading-7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  
+  .markdown-body h1 {
+    @apply text-3xl font-bold mt-8 mb-4 pb-2 border-b border-gray-200 text-gray-900;
+  }
+  .markdown-body h2 {
+    @apply text-2xl font-semibold mt-6 mb-4 text-gray-900;
+  }
+  .markdown-body h3 {
+    @apply text-xl font-medium mt-6 mb-3 text-gray-900;
+  }
+  .markdown-body p {
+    @apply mb-4;
+  }
+  .markdown-body a {
+    @apply text-gray-600 underline hover:text-gray-900;
+  }
+  .markdown-body ul, .markdown-body ol {
+    @apply pl-6 mb-4 space-y-1;
+  }
+  .markdown-body ul {
+    list-style-type: disc;
+  }
+  .markdown-body blockquote {
+    @apply pl-4 py-1 my-4 border-l-4 border-gray-300 text-gray-600 italic;
+  }
+  .markdown-body pre {
+    @apply p-4 rounded-md my-4 overflow-x-auto text-sm bg-gray-50 border border-gray-200;
+  }
+  .markdown-body code {
+    @apply font-mono bg-gray-100 px-1.5 py-0.5 rounded text-sm text-gray-800 border border-gray-200;
+  }
+  .markdown-body pre code {
+    @apply bg-transparent p-0 border-0 text-gray-800;
+  }
+  .markdown-body hr {
+    @apply my-6 border-t border-gray-200;
+  }
+  .markdown-body table {
+    @apply w-full mb-4 border-collapse text-sm;
+  }
+  .markdown-body th {
+    @apply bg-gray-50 p-2 border border-gray-300 font-semibold text-left;
+  }
+  .markdown-body td {
+    @apply p-2 border border-gray-300;
+  }
+  .markdown-body img {
+    @apply rounded-md border border-gray-200 max-w-full my-4;
+  }
+}
